@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "category": "concept_comparison"
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "category": "use_case"
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "category": "decision"
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "category": "summary"
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "category": "api_understanding"
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "category": "relationship"
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "category": "decision"
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "category": "tooling"
+  }
+]

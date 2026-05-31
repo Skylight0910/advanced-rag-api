@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 9.901,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "answer": "根据文档描述，LangChain 和 LangGraph 的主要区别在于定位与适用场景：\n\n- **LangChain** 适合**快速构建简单的 LLM 应用**，提供了高度可定制的“束缚带”（harness），可以方便地根据你的用例和数据做调整（例如 `create_agent` 即可创建 Agent）。\n- **LangGraph** 是一个**底层的编排框架**，专为**复杂、可控、有状态的多步骤 Agent 工作流**设计，能够将确定性流程和代理式（agentic）流程结合起来，适用于更高级的需求。\n\n简单说：想快速上手、构建简单应用选 LangChain；需要精细控制、构建复杂多步骤逻辑选 LangGraph。",
+      "retrieved_chunks": [
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 8.945,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "rewritten_queries": [
+        "LangChain 和 LangGraph 核心差异对比",
+        "LangChain 与 LangGraph 适用场景分析",
+        "LangGraph 相比 LangChain 在架构上做了哪些改进"
+      ],
+      "answer": "根据上下文，LangChain 和 LangGraph 的主要区别如下：\n\n- **LangChain** 适合快速构建简单的 LLM 应用，提供高度可定制的 harness，便于根据用例和数据轻松调整。\n- **LangGraph** 是一个底层编排框架，适合构建复杂、可控、有状态的多步骤 Agent 工作流，能够结合确定性流程和 Agent 化流程。\n\n另外，上下文还指出，LangChain 的 agents 本身是基于 LangGraph 构建的。",
+      "retrieved_chunks": [
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 12.721,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "hypothetical_doc": "LangChain 是一个用于构建基于大语言模型（LLM）应用的框架，提供链（Chains）、代理（Agents）、工具集成等组件，侧重于线性或顺序的调用流程。LangGraph 是 LangChain 生态中的库，专门用于构建有状态、多步骤的图结构工作流，支持循环、条件分支和持久化状态，适合构建复杂的自主代理和多智能体系统。两者主要区别在于：LangChain 强调链式编排，而 LangGraph 提供图执行模型以支持更动态、循环的控制流。",
+      "answer": "根据提供的上下文，LangChain 和 LangGraph 的主要区别如下：\n\n- **LangChain** 适合快速构建简单的 LLM 应用，提供了一个高度可定制的 harness（通过 `create_agent`），可以让你根据具体用例灵活组合模型、工具、提示和中间件。\n- **LangGraph** 是一个低级编排框架，用于构建复杂、可控、有状态的多步骤 Agent 工作流，特别适合需要结合确定性流程与代理式流程的高级需求。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 19.016,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的上下文，LangChain 和 LangGraph 的主要区别如下：\n\n- **定位与用途**  \n  - **LangChain**：更适合**快速构建简单的 LLM 应用**，提供一个高度可自定义的代理框架（如 `create_agent`），方便根据具体用例和数据轻松调整。  \n  - **LangGraph**：是一个**低层级的编排框架**，用于构建**复杂、可控、有状态的多步骤 Agent 工作流**，适合需要将确定性流程与代理决策相结合的高级需求。\n\n- **主要特点**  \n  - **LangChain**：标准化了不同模型提供商的接口，使得切换模型而无须担心锁定；其代理框架是“最小化”的（模型、工具、提示、循环），可通过中间件自由扩展，每一部分处理一个关注点并可灵活组合。  \n  - **LangGraph**：强调**编排能力**，能够处理复杂的状态和多步骤执行，提供对工作流的精细控制，适合构建需要严格逻辑和持久状态管理的场景。\n\n简而言之，对于简单、灵活、快速上手的代理应用，优先选择 LangChain；对于需要精细控制、有状态的多步骤工作流，则优先选择 LangGraph。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles"
+      ],
+      "rerank_scores": [
+        0.9858658313751221,
+        0.7605754733085632,
+        0.7397902607917786
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.61,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "answer": "根据提供的上下文，LangChain 和 LangGraph 的主要区别如下：\n\n- **LangChain**：适合快速构建简单的 LLM 应用，可用于高度可定制的 Agent 开发，易于根据用例和数据进行定制。\n- **LangGraph**：是一种低层编排框架，适合构建复杂、可控、有状态的多步骤 Agent 工作流，能够结合确定性和智能体工作流。同时，LangChain 的 agents 本身也是基于 LangGraph 构建的。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03177805800756621,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.031754032258064516,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03149801587301587,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.031024531024531024,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q1",
+    "query": "LangChain 和 LangGraph 有什么区别？",
+    "category": "concept_comparison",
+    "expected_points": [
+      "LangChain 适合快速构建 LLM 应用或 Agent",
+      "LangGraph 更适合复杂、可控、有状态的工作流",
+      "LangGraph 可以用于更底层的 agent orchestration"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 8.977,
+    "data": {
+      "question": "LangChain 和 LangGraph 有什么区别？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文信息，LangChain 和 LangGraph 的主要区别如下：\n\n- **LangChain**：适合快速构建简单的 LLM 应用，提供高度可定制的“harness”（如 `create_agent`），能轻松根据你的用例和数据进行调整。\n- **LangGraph**：是一个低层级的编排框架，适用于构建复杂、可控、有状态的多步骤代理工作流，能将确定性流程与代理工作流相结合。\n\n简而言之，LangChain 更偏向于快速、灵活地搭建代理，而 LangGraph 则用于需要精细控制和复杂步骤编排的场景。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles"
+      ],
+      "rerank_scores": [
+        0.9858658313751221,
+        0.7605754733085632,
+        0.7397902607917786
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.056,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "answer": "根据提供的上下文，Deep Agents 适合希望获得开箱即用的高级 Agent 能力的场景，例如需要自动上下文压缩、虚拟文件系统和子代理（subagent）能力时，可以优先考虑使用 Deep Agents。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 9.757,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "rewritten_queries": [
+        "Deep Agents 典型应用案例",
+        "Deep Agents 技术优势与适用边界",
+        "Deep Agents 与常规代理在场景选择上的差异"
+      ],
+      "answer": "根据上下文，Deep Agents 适合希望获得开箱即用的高级 Agent 能力的场景，例如需要自动上下文压缩、虚拟文件系统和子代理（子代理生成）能力的情况。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "def get_weather(city: str) -> str:\n    \"\"\"Get weather for a given city.\"\"\"\n    return f\"It's always sunny in {city}!\"\n\nagent = create_agent(\n    model=\"openai:gpt-5.4\",\n    tools=[get_weather],\n    sy",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 10.359,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "hypothetical_doc": "Deep Agents 适合处理复杂、多步骤任务，需要自主规划、工具调用和动态决策的场景，例如自动化研究、代码生成与调试、复杂数据分析、客户支持中需多轮推理的工单处理，以及任何需要结合长短期记忆与外部知识库的开放式问题。",
+      "answer": "根据提供的上下文，Deep Agents 适合希望获得开箱即用的高级 Agent 能力的场景，具体包括自动上下文压缩、虚拟文件系统和子代理（subagent）能力。如果需要“batteries-included”式的 Agent，可以优先考虑 Deep Agents。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.16,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文，Deep Agents 适合需要开箱即用的高级 Agent 能力的场景，例如自动上下文压缩、虚拟文件系统和子代理能力。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ],
+      "rerank_scores": [
+        0.6351504325866699,
+        0.19850367307662964,
+        0.004467633552849293
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 4.652,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "answer": "根据提供的上下文，Deep Agents 适合需要开箱即用的高级 Agent 能力的场景，具体包括：\n\n- 自动上下文压缩\n- 虚拟文件系统\n- 子代理能力（subagent-spawning）\n\n简单来说，当你希望快速获得一个功能齐全、无需从底层构建的 Agent 时，可以考虑 Deep Agents。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "combining deterministic and agentic workflows.Use LangSmith to trace, debug, and evaluate agents built with any of these frameworks. Follow the tracing quickstart to get set up.",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.032266458495966696,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.030621785881252923,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03055037313432836,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.030536130536130537,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q2",
+    "query": "Deep Agents 适合什么场景？",
+    "category": "use_case",
+    "expected_points": [
+      "Deep Agents 提供开箱即用的 Agent 能力",
+      "适合需要自动上下文压缩、虚拟文件系统或子代理能力的场景",
+      "构建在 LangChain agent 之上"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 6.509,
+    "data": {
+      "question": "Deep Agents 适合什么场景？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的上下文，Deep Agents 适合那些需要开箱即用的高级 Agent 能力的场景，具体包括自动上下文压缩、虚拟文件系统以及子代理（subagent）能力。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ],
+      "rerank_scores": [
+        0.6351504325866699,
+        0.19850367307662964,
+        0.004467633552849293
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 2.505,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "answer": "如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "See the Installation instructions and Quickstart guide to get started building your own agents and applications with LangChain.\nUse LangSmith to trace requests, debug agent behavior, and evaluate outp",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 8.994,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "rewritten_queries": [
+        "LangGraph 的典型应用场景有哪些",
+        "LangGraph 与 LangChain 的区别及适用时机",
+        "用于构建复杂 AI agent 时为什么选择 LangGraph"
+      ],
+      "answer": "根据上下文，应该在以下情况使用 LangGraph：\n\n- **需要构建复杂、可控、有状态的多步骤 Agent 工作流**时。\n- **需要结合确定性工作流和代理工作流**的高级场景下，使用其低层编排能力。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 9.161,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "hypothetical_doc": "LangGraph 适用于构建有状态的、涉及多步骤的代理工作流，特别是需要循环、条件分支、持久化状态、人在回路或复杂工具编排的场景。当你需要比简单的线性 DAG 更灵活的控制流，或者要在多个代理、工具调用与人工审核之间反复切换时，LangGraph 提供的图结构和内置状态管理能大幅简化实现。",
+      "answer": "根据上下文，当需要构建复杂、可控、有状态的多步骤 Agent 工作流时，应该优先考虑使用 LangGraph。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 6.65,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文，当您需要构建**复杂、可控、有状态的多步骤 Agent 工作流**，或者处理**结合确定性流程与智能体（Agent）流程的高级需求**时，应该优先使用 LangGraph。它作为底层编排框架，适合需要精细控制、持久化、人机协同等高级功能的场景。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ],
+      "rerank_scores": [
+        0.8705005049705505,
+        0.07914155721664429,
+        0.006056525744497776
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 3.903,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "answer": "根据提供的上下文，当你需要构建**复杂、可控、有状态的多步骤 Agent 工作流**，或者有**结合确定性工作流与智能体工作流的高级需求**时，应该优先考虑使用 LangGraph。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "See the Installation instructions and Quickstart guide to get started building your own agents and applications with LangChain.\nUse LangSmith to trace requests, debug agent behavior, and evaluate outp"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.032266458495966696,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03177805800756621,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03128054740957967,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.016129032258064516,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.015873015873015872,
+          "sources": [
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q3",
+    "query": "什么时候应该使用 LangGraph？",
+    "category": "decision",
+    "expected_points": [
+      "需要复杂流程编排时可以使用 LangGraph",
+      "需要结合确定性工作流和 agentic workflow 时适合使用",
+      "需要更强控制能力或状态管理时适合使用"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.616,
+    "data": {
+      "question": "什么时候应该使用 LangGraph？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，或者需要将确定性工作流与智能体工作流相结合的高级编排需求时，应该优先考虑使用 LangGraph。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ],
+      "rerank_scores": [
+        0.8705005049705505,
+        0.07914155721664429,
+        0.006056525744497776
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.164,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "answer": "这个知识库主要介绍了不同的 Agent 框架及它们的使用建议。具体包括：\n\n- **LangChain**：适合快速构建简单的 LLM 应用。\n- **LangGraph**：适合构建复杂、可控、有状态的多步骤 Agent 工作流。\n- **Deep Agents**：提供开箱即用的高级 Agent 能力，如自动上下文压缩、虚拟文件系统和子代理功能。\n- **MCP**：可将文档连接到 Claude、VSCode 等工具，用于实时文档问答。\n\n简而言之，该知识库对比了 LangChain、LangGraph 和 Deep Agents 三种框架的适用场景，并提到了 MCP 的文档连接功能。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 13.257,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "rewritten_queries": [
+        "知识库涵盖的主题有哪些？",
+        "知识库的主要目标是什么？",
+        "知识库的内容结构如何划分？"
+      ],
+      "answer": "这个知识库主要介绍了 **Agent 框架的选择指南**。它对比了 LangChain、LangGraph 和 Deep Agents 三种框架的适用场景：\n\n- **LangChain** 适合快速构建简单的 LLM 应用。\n- **LangGraph** 适合构建复杂、可控、有状态的多步骤 Agent 工作流。\n- **Deep Agents** 提供开箱即用的高级 Agent 能力（如自动上下文压缩、虚拟文件系统和子代理生成）。\n\n此外，还提到了通过 **MCP** 将文档连接到 Claude、VSCode 等工具，以实现实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "def get_weather(city: str) -> str:\n    \"\"\"Get weather for a given city.\"\"\"\n    return f\"It's always sunny in {city}!\"\n\nagent = create_agent(\n    model=\"openai:gpt-5.4\",\n    tools=[get_weather],\n    sy",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 16.561,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "hypothetical_doc": "本知识库汇总了多个领域的常见问题与解答，涵盖技术文档、产品使用指南、故障排除步骤及最佳实践案例。内容按主题分类，方便用户快速查找相关知识点。",
+      "answer": "这个知识库主要讲了 **Agent 框架的选择指南**，包括：\n\n- 根据不同需求推荐不同的框架：快速构建简单 LLM 应用用 LangChain，构建复杂、有状态的多步骤工作流用 LangGraph，需要开箱即用的高级能力（如自动上下文压缩、虚拟文件系统、子代理）用 Deep Agents。\n- 还提到了通过 MCP 可以将文档连接到 Claude、VSCode 等工具，实现实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "and any middleware that shapes behavior. Start with the primitives and compose exactly what your use case needs. Supports OpenAI, Anthropic, Google, and more."
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.034,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "这段内容主要介绍了 LangChain、LangGraph 和 Deep Agents 这三者的定位与使用建议：\n\n- **Deep Agents**：提供“开箱即用”的智能体，具备自动上下文压缩、虚拟文件系统和子智能体生成等功能，适合直接使用。\n- **LangChain**（通过 `create_agent`）：提供高度可定制的框架，便于根据具体用例和数据灵活调整。\n- **LangGraph**：低层编排框架，适合需要结合确定性与智能体工作流的高级场景。\n\n总之，该知识库帮助开发者根据需求选择最合适的工具。",
+      "retrieved_chunks": [
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent"
+      ],
+      "rerank_scores": [
+        0.00048224948113784194,
+        5.8471818192629144e-05,
+        3.74005212506745e-05
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 4.84,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "answer": "该知识库主要介绍了不同Agent框架的选择指南：LangChain适合快速构建简单LLM应用，LangGraph适合复杂、有状态的多步骤工作流，Deep Agents提供开箱即用的高级能力（如自动上下文压缩、虚拟文件系统和子代理）。此外还涉及MCP将文档连接到工具（如Claude、VSCode）用于实时问答，以及LangSmith引擎用于检测代理跟踪问题并建议修复。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.01639344262295082,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.016129032258064516,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.015873015873015872,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.015625,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.015384615384615385,
+          "sources": [
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q4",
+    "query": "这个知识库主要讲了什么？",
+    "category": "summary",
+    "expected_points": [
+      "介绍 LangChain 相关文档内容",
+      "包含 LangChain、LangGraph、Deep Agents 等主题",
+      "用于说明不同工具在构建 Agent 或 LLM 应用时的定位"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 11.393,
+    "data": {
+      "question": "这个知识库主要讲了什么？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "这个知识库主要介绍了 LangChain 开发框架的整体概述，重点对比了 LangChain、LangGraph 和 Deep Agents 三种工具的定位和适用场景：  \n- **Deep Agents**：提供“功能齐全”的代理，内置自动上下文压缩、虚拟文件系统和子代理生成等特性。  \n- **LangChain（create_agent）**：高度可定制的代理构建工具，适合根据具体用例和数据进行调整。  \n- **LangGraph**：底层编排框架，用于结合确定性工作流与代理式工作流的高级需求。  \n\n此外，还包含安装指引、快速入门、核心组件（如代理、模型、消息、工具、短期记忆等）、流式处理、中间件等内容，以及相关资源链接。",
+      "retrieved_chunks": [
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent"
+      ],
+      "rerank_scores": [
+        0.00048224948113784194,
+        5.8471818192629144e-05,
+        3.74005212506745e-05
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.482,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "answer": "根据提供的上下文，LangChain 的 `create_agent` 是一个**最小化且高度可配置的代理（Agent）框架**。它的作用是提供一个“外壳（harness）”，将模型循环所需的一切组合在一起，包括提示词（prompt）、工具（tools）以及任何会影响代理行为的中间件（middleware），从而使其能够高度定制，轻松适配你的具体用例和数据。",
+      "retrieved_chunks": [
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 13.19,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "rewritten_queries": [
+        "LangChain create_agent 函数的主要功能是什么",
+        "如何使用 LangChain 的 create_agent 构建代理示例",
+        "LangChain 中 create_agent 与 initialize_agent 有何不同"
+      ],
+      "answer": "根据提供的上下文，`create_agent` 是 LangChain 提供的一个最小化但高度可配置的“马具（harness）”。它的作用是将模型循环周围的一切——包括提示、工具以及任何塑造行为的中件间——整合在一起，从而让用户能够根据自己的用例，从模型、工具、提示和中件间中精确组合出所需的 Agent。简而言之，它是一个高度可定制的 Agent 构建器，便于根据具体需求和数据进行定制。",
+      "retrieved_chunks": [
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 11.672,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "hypothetical_doc": "在LangChain中，`create_agent` 是一个便捷的工厂函数，用于快速构建基于工具（tools）和大语言模型（LLM）的智能体。它封装了智能体提示模板、输出解析器、工具执行循环的初始化逻辑，帮助开发者用最少的代码创建一个能自动推理、调用工具并处理结果的 AgentExecutor。",
+      "answer": "根据上下文，LangChain 的 `create_agent` 提供了一个最小化、高度可配置的 **agent harness**（代理骨架）。它的作用是将模型、工具、提示以及用于塑造行为的中间件（middleware）组合起来，让用户能够精确地构建出满足用例需求的自定义代理。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.705,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文，`create_agent` 是 LangChain 提供的一个最小化、高度可配置的代理骨架（agent harness）。它的作用是让你能够**通过组合模型（model）、工具（tools）、提示（prompt）和中间件（middleware），精确构建出满足具体用例需求的代理**，不多不少，无需处理额外的复杂性。",
+      "retrieved_chunks": [
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9980315566062927,
+        0.9978061318397522,
+        0.9959328770637512
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.791,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "answer": "根据提供的上下文，LangChain 的 `create_agent` 是一个**最小化、高度可配置的代理框架（agent harness）**。它的作用主要是让开发者能够从模型、工具、提示和中间件中精确组合出符合自己用例需求的代理。简而言之，`create_agent` 提供了一个高度可定制的外壳，便于根据具体用例和数据灵活调整代理行为。",
+      "retrieved_chunks": [
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03252247488101534,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.032018442622950824,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03200204813108039,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03149801587301587,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.030309988518943745,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q5",
+    "query": "LangChain 的 create_agent 有什么作用？",
+    "category": "api_understanding",
+    "expected_points": [
+      "create_agent 用于创建 Agent",
+      "可以组合模型、工具、提示词和中间件",
+      "适合根据具体需求构建自定义 agent"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.985,
+    "data": {
+      "question": "LangChain 的 create_agent 有什么作用？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的文档内容，LangChain 的 `create_agent` 是一个**最小化、高度可配置的代理框架（harness）**。它的作用是将模型（model）、工具（tools）、提示（prompt）和中间件（middleware）自由组合，让你能够构建出**恰好满足用例需求的代理**，不多也不少。框架本身负责模型循环之外的一切，包括提示、工具以及所有塑造代理行为的中间件。",
+      "retrieved_chunks": [
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9980315566062927,
+        0.9978061318397522,
+        0.9959328770637512
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.454,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "answer": "根据提供的上下文，Deep Agents 是 **基于 LangChain agents 构建的**。它提供了一个“开箱即用”的高级代理，内置了自动上下文压缩、虚拟文件系统和子代理生成等功能，而用户也可以直接使用底层的 LangChain agent 来进行更灵活的自定义。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.92,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "rewritten_queries": [
+        "Deep Agents 与 LangChain agent 有什么区别和联系",
+        "Deep Agents 是基于 LangChain 构建的吗",
+        "LangChain 生态中 Deep Agents 的定位"
+      ],
+      "answer": "Deep Agents 是构建在 LangChain agents 之上的，你可以直接使用 LangChain agents，也可以选择 Deep Agents。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "LangChain overview - Docs by LangChainSkip to main contentDocs by LangChain home pageOpen sourceSearch...⌘KAsk AIGitHubTry LangSmithTry LangSmithSearch...NavigationLangChain overviewDeep AgentsLangCha",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 13.711,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "hypothetical_doc": "Deep Agents 是 LangChain 生态中的高级代理构建库，它扩展了 LangChain 基础 Agent 抽象（如 Tool-calling 和 ReAct 循环），引入了规划、反思和工具编排等更深层次的推理能力。简单说，LangChain Agent 提供通用的代理运行时与工具接口，而 Deep Agents 在此基础上实现更智能的多步规划与自我修正机制。",
+      "answer": "根据提供的文档，Deep Agents 是基于 LangChain agents 构建的，你可以直接使用它们。文档中提到：“Deep Agents are built on LangChain agents which you can also use directly.”（Deep Agents 构建于 LangChain agents 之上，你也可以直接使用 LangChain agents。）",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 7.679,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的上下文，Deep Agents 是建立在 LangChain agents 之上的。这意味着 Deep Agents 使用了 LangChain agent 的基础设施，并在此基础上提供了开箱即用的高级功能（如自动上下文压缩、虚拟文件系统和子代理能力）。同时，如果您需要更高的可定制性，也可以直接使用 LangChain agents（通过 `create_agent` 等接口）。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9975289702415466,
+        0.9673534035682678,
+        0.21346011757850647
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 3.427,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "answer": "Deep Agents 是构建在 LangChain agents 之上的，你可以直接使用 LangChain agents，也可以使用提供了更多开箱即用能力的 Deep Agents。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03200204813108039,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03200204813108039,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03076923076923077,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03055037313432836,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q6",
+    "query": "Deep Agents 和 LangChain agent 是什么关系？",
+    "category": "relationship",
+    "expected_points": [
+      "Deep Agents 构建在 LangChain agent 之上",
+      "Deep Agents 提供更开箱即用的高级能力",
+      "LangChain agent 更偏向可组合和可定制"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.304,
+    "data": {
+      "question": "Deep Agents 和 LangChain agent 是什么关系？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "Deep Agents 是建立在 LangChain agents 之上的，可以直接使用 LangChain agents 来构建和定制。",
+      "retrieved_chunks": [
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9975289702415466,
+        0.9673534035682678,
+        0.21346011757850647
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 2.798,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "answer": "根据上下文，如果您想要一个更可控的多步骤 Agent，应该优先考虑 **LangGraph**。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "combining deterministic and agentic workflows.Use LangSmith to trace, debug, and evaluate agents built with any of these frameworks. Follow the tracing quickstart to get set up."
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 8.312,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "rewritten_queries": [
+        "更可控的多步骤代理框架推荐",
+        "多步骤AI代理的可控性与工作流设计",
+        "如何增强多步骤代理的流程控制能力"
+      ],
+      "answer": "根据提供的上下文，如果你想要一个更可控的多步骤 Agent，应该优先考虑 **LangGraph**。\n\n上下文指出：\n- “如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。”\n- 在对比部分也提到：“Use LangGraph, our low-level orchestration framework, for advanced needs combining deterministic and agentic workflows.”\n\n因此，LangGraph 是更可控的多步骤 Agent 的推荐选择。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "needs, nothing more.Learn moreBuilt on top of LangGraphLangChain’s agents are built on top of LangGraph. This allows us to take advantage of LangGraph’s durable execution, human-in-the-loop support, p",
+        "def get_weather(city: str) -> str:\n    \"\"\"Get weather for a given city.\"\"\"\n    return f\"It's always sunny in {city}!\"\n\nagent = create_agent(\n    model=\"openai:gpt-5.4\",\n    tools=[get_weather],\n    sy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 10.079,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "hypothetical_doc": "对于需要更可控的多步骤Agent，推荐选择LangGraph。它通过状态图显式定义Agent的执行流程，支持条件分支、循环和人工干预，比AutoGPT等自主型Agent提供更细粒度的步骤控制和可观测性。",
+      "answer": "根据上下文，应该优先考虑 **LangGraph**。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 4.632,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的上下文，如果需要构建更可控的多步骤 Agent，应优先选择 **LangGraph**。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9967308044433594,
+        0.027893397957086563,
+        0.007298175245523453
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 3.176,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "answer": "根据提供的上下文，如果需要构建一个更可控的多步骤 Agent，应优先考虑 **LangGraph**。上下文原文为：“如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。”",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "The LangSmith Engine detects issues in your LangChain agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab.\n​ Create an agent\nOpenAIGoogle Ge"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.031754032258064516,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03128054740957967,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.031024531024531024,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03057889822595705,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q7",
+    "query": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+    "category": "decision",
+    "expected_points": [
+      "应该考虑 LangGraph",
+      "LangGraph 适合复杂状态和流程控制",
+      "LangGraph 适合多步骤或需要编排的 agent 场景"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.108,
+    "data": {
+      "question": "如果我想要一个更可控的多步骤 Agent，应该选什么？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文，如果您需要一个更可控的多步骤 Agent，建议优先考虑 **LangGraph**。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ],
+      "rerank_scores": [
+        0.9967308044433594,
+        0.027893397957086563,
+        0.007298175245523453
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 3.704,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "answer": "根据提供的上下文，MCP 的作用是将文档连接到 Claude、VSCode 等工具，从而实现实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask_multi_query",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 8.465,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "rewritten_queries": [
+        "MCP 在文档问答系统中的主要功能",
+        "如何利用 Model Context Protocol 提升文档问答的准确性",
+        "MCP 协议在 RAG 问答集成中的应用实践"
+      ],
+      "answer": "根据上下文，MCP（Model Context Protocol）可以将文档连接到 Claude、VSCode 等工具，用于实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "combining deterministic and agentic workflows.Use LangSmith to trace, debug, and evaluate agents built with any of these frameworks. Follow the tracing quickstart to get set up."
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask_hyde",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 9.233,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "hypothetical_doc": "MCP（Model Context Protocol）在文档问答中的作用是标准化大语言模型与外部文档数据源的交互，使模型能通过统一的协议获取、检索和引用上下文信息。它允许问答系统将文档库、向量数据库或知识图谱作为工具接入，动态提供片段作为生成答案的依据，从而增强回答的准确性和可溯源性。",
+      "answer": "MCP 的作用是将文档连接到 Claude、VSCode 等工具，实现实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "agent harness. Compose exactly the agent your use case needs from model, tools, prompt, and middleware.Copy pageDocumentation IndexFetch the complete documentation index at: https://docs.langchain.com",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age"
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 5.751,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据上下文，MCP（Model Context Protocol）在文档问答中的作用是将文档连接到 Claude、VSCode 等工具，从而支持实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith"
+      ],
+      "rerank_scores": [
+        0.9563310742378235,
+        0.33606067299842834,
+        0.06573055684566498
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask_hybrid",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 3.444,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "answer": "根据上下文，MCP（模型上下文协议）可以将文档连接到 Claude、VSCode 等工具，从而用于实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith",
+        "Standard model interfaceDifferent providers have unique APIs for interacting with models, including the format of responses. LangChain standardizes how you interact with models so that you can seamles",
+        "LangChain vs. LangGraph vs. Deep AgentsStart with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agent"
+      ],
+      "retrieval_details": [
+        {
+          "rrf_score": 0.03278688524590164,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.031746031746031744,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.03128054740957967,
+          "sources": [
+            "bm25",
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.016129032258064516,
+          "sources": [
+            "embedding"
+          ]
+        },
+        {
+          "rrf_score": 0.015625,
+          "sources": [
+            "embedding"
+          ]
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "id": "q8",
+    "query": "MCP 在文档问答中有什么作用？",
+    "category": "tooling",
+    "expected_points": [
+      "MCP 可以将文档连接到 Claude、VSCode 等工具",
+      "MCP 用于提供实时答案或文档访问能力",
+      "MCP 有助于把外部文档能力接入开发工具"
+    ],
+    "endpoint": "/ask_hybrid_rerank",
+    "ok": true,
+    "status_code": 200,
+    "latency_seconds": 4.789,
+    "data": {
+      "question": "MCP 在文档问答中有什么作用？",
+      "candidate_k": 10,
+      "rerank_top_k": 3,
+      "answer": "根据提供的文档说明，MCP 可以将文档连接到 Claude、VSCode 等工具，用于实时文档问答。",
+      "retrieved_chunks": [
+        "# Agent 框架选择指南\n\n如果需要快速构建一个简单的 LLM 应用，可以优先考虑 LangChain。\n\n如果需要构建复杂、可控、有状态的多步骤 Agent 工作流，可以优先考虑 LangGraph。\n\n如果希望获得开箱即用的高级 Agent 能力，例如自动上下文压缩、虚拟文件系统和子代理能力，可以考虑 Deep Agents。\n\nMCP 可以将文档连接到 Claude、VSCode 等工具",
+        "outputMiddlewareOverviewPrebuilt middlewareCustom middlewareFrontendOverviewPatternsIntegrationsAdvanced usageGuardrailsRuntimeContext engineeringModel Context Protocol (MCP)Human-in-the-loopMulti-age",
+        "Connect these docs to Claude, VSCode, and more via MCP for real-time answers.Edit this page on GitHub or file an issue.Was this page helpful?YesNoInstall LangChainNext⌘IDocs by LangChain home pagegith"
+      ],
+      "rerank_scores": [
+        0.9563310742378235,
+        0.33606067299842834,
+        0.06573055684566498
+      ]
+    },
+    "error": null
+  }
+]

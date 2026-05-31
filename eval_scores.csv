@@ -1,0 +1,13 @@
+id,query,endpoint,retrieval_relevance,answer_correctness,groundedness,completeness,notes
+q1,"LangChain 和 LangGraph 有什么区别？",/ask,4,5,5,4,"回答正确，覆盖核心区别，但 retrieved_chunks 中有少量噪声"
+q1,"LangChain 和 LangGraph 有什么区别？",/ask_multi_query,4,5,5,5,"答案更完整，rewritten_queries 覆盖不同角度"
+q1,"LangChain 和 LangGraph 有什么区别？",/ask_hyde,4,4,5,3,"回答正确但较简略，覆盖点不如其他策略完整"
+q1,"LangChain 和 LangGraph 有什么区别？",/ask_rerank,5,5,5,5,"第一条 chunk 命中核心内容，rerank score 最高约 0.986"
+q7,"如果我想要一个更可控的多步骤 Agent，应该选什么？",/ask,3,3,5,2,"回答偏保守，没有明确给出 LangGraph"
+q7,"如果我想要一个更可控的多步骤 Agent，应该选什么？",/ask_multi_query,4,5,5,5,"明确回答 LangGraph，并说明确定性工作流和 agentic workflow"
+q7,"如果我想要一个更可控的多步骤 Agent，应该选什么？",/ask_hyde,4,5,5,4,"能明确回答 LangGraph，但 retrieved_chunks 中仍有部分泛化内容"
+q7,"如果我想要一个更可控的多步骤 Agent，应该选什么？",/ask_rerank,4,5,5,4,"能明确回答 LangGraph，答案较简洁"
+q8,"MCP 在文档问答中有什么作用？",/ask,4,5,5,4,"能回答 MCP 连接 Claude、VSCode 等工具获取实时答案"
+q8,"MCP 在文档问答中有什么作用？",/ask_multi_query,5,5,5,5,"命中关键 chunk，答案最完整"
+q8,"MCP 在文档问答中有什么作用？",/ask_hyde,3,2,5,1,"返回不知道，说明 HyDE 没有召回关键内容"
+q8,"MCP 在文档问答中有什么作用？",/ask_rerank,5,5,5,4,"命中关键 chunk，答案正确但较简洁"
