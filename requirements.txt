@@ -10,3 +10,6 @@ langchain-huggingface
 sentence-transformers
 langchain-deepseek
 pypdf
+pymilvus
+rank-bm25
+jieba
