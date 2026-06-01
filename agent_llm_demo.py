@@ -11,7 +11,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 load_dotenv()
 load_dotenv("/app/.env")
 
-RAG_ENDPOINT = "http://localhost:8000/ask_rerank"
+RAG_ENDPOINT = "http://localhost:8000/ask_hybrid_rerank"
 
 llm = ChatDeepSeek(
     model="deepseek-v4-pro",
@@ -34,6 +34,15 @@ TOOLS = [
             "expression": "string，数学表达式"
         },
     },
+    
+    {
+    	"name": "get_weather",
+    	"description": "查询指定城市的当前天气。适合回答天气、温度、降雨和风速问题。",
+    	"args": {
+    	    "city": "string，城市名称，例如上海、北京、广州、深圳"
+    	},
+    },
+    
     {
         "name": "project_status",
         "description": "查看当前项目已经实现了哪些能力和接口。",
@@ -94,6 +103,61 @@ def calculator(expression: str) -> str:
     return str(result)
 
 
+def resolve_city(city: str) -> dict:
+    response = requests.get(
+        "https://geocoding-api.open-meteo.com/v1/search",
+        params={
+            "name": city,
+            "count": 1,
+            "language": "zh",
+            "format": "json",
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+
+    results = response.json().get("results", [])
+    if not results:
+        raise ValueError(f"找不到城市：{city}")
+
+    return results[0]
+
+
+def get_weather(city: str) -> str:
+    location = resolve_city(city)
+
+    response = requests.get(
+        "https://api.open-meteo.com/v1/forecast",
+        params={
+            "latitude": location["latitude"],
+            "longitude": location["longitude"],
+            "current": (
+                "temperature_2m,"
+                "relative_humidity_2m,"
+                "precipitation,"
+                "wind_speed_10m"
+            ),
+            "timezone": location.get("timezone", "auto"),
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+
+    return json.dumps(
+        {
+            "location": {
+                "name": location["name"],
+                "country": location.get("country"),
+                "admin1": location.get("admin1"),
+                "latitude": location["latitude"],
+                "longitude": location["longitude"],
+            },
+            "current": response.json().get("current", {}),
+        },
+        ensure_ascii=False,
+    )
+
+
 def project_status() -> str:
     return """当前项目已经支持：
 - /ask: Naive RAG
@@ -102,6 +166,8 @@ def project_status() -> str:
 - /ask_rerank: Chroma + Rerank
 - /ask_milvus: Milvus RAG
 - /ask_milvus_rerank: Milvus + Rerank
+- /ask_hybrid: BM25 + Embedding + RRF
+- /ask_hybrid_rerank: Hybrid Search + Rerank
 - ingest_docs.py: Markdown/TXT 文档导入
 - eval_manual.py / eval_scores.csv: RAG 评估
 """
@@ -111,6 +177,7 @@ TOOL_FUNCTIONS = {
     "rag_search": rag_search,
     "calculator": calculator,
     "project_status": project_status,
+    "get_weather": get_weather,
 }
 
 
@@ -177,6 +244,7 @@ def execute_tool(tool_call: dict[str, Any]) -> str:
 def final_answer(user_input: str, tool_call: dict[str, Any], observation: str) -> str:
     system_prompt = """你是一个 Agent。现在你已经拿到了工具执行结果。
 请基于用户问题和工具结果，给出自然语言最终回答。
+不要补充工具结果中不存在的信息，不要猜测天气状况。
 如果工具结果不足以回答，请说明不足。"""
 
     content = f"""用户问题：
@@ -224,6 +292,7 @@ def main():
         "如果我要构建一个更可控的多步骤 Agent，应该用什么？",
         "帮我算一下 12*8+5。",
         "当前项目已经支持哪些能力？",
+        "上海现在天气怎么样？",
     ]
 
     for question in questions:
