@@ -1,3 +1,5 @@
+import hashlib
+from collections import defaultdict
 from pathlib import Path
 
 from langchain_chroma import Chroma
@@ -46,13 +48,48 @@ def split_documents(documents: list[Document]) -> list[Document]:
     )
 
     chunks = splitter.split_documents(documents)
+    chunk_counts = defaultdict(int)
 
-    for i, chunk in enumerate(chunks):
-        chunk.metadata["chunk_id"] = i
+    for chunk in chunks:
+        source = chunk.metadata["source"]
+        chunk.metadata["chunk_id"] = chunk_counts[source]
         chunk.metadata["chunk_size"] = CHUNK_SIZE
         chunk.metadata["chunk_overlap"] = CHUNK_OVERLAP
+        chunk_counts[source] += 1
 
     return chunks
+
+
+def build_chunk_id(chunk: Document) -> str:
+    source = chunk.metadata["source"]
+    content = chunk.page_content
+    value = f"{source}\n{content}"
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def delete_stale_chunks(
+    vectordb: Chroma,
+    managed_sources: set[str],
+    current_ids: set[str],
+) -> int:
+    existing = vectordb.get(include=["metadatas"])
+    stale_ids = []
+
+    for record_id, metadata in zip(
+        existing.get("ids", []),
+        existing.get("metadatas", []),
+    ):
+        metadata = metadata or {}
+        if (
+            metadata.get("source") in managed_sources
+            and record_id not in current_ids
+        ):
+            stale_ids.append(record_id)
+
+    if stale_ids:
+        vectordb.delete(ids=stale_ids)
+
+    return len(stale_ids)
 
 
 def main():
@@ -66,19 +103,39 @@ def main():
 
     print("Splitting documents...")
     chunks = split_documents(documents)
+    chunk_ids = [build_chunk_id(chunk) for chunk in chunks]
     print(f"Generated chunks: {len(chunks)}")
 
     print("Loading embedding model...")
-    embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+    embedding_model = HuggingFaceEmbeddings(
+        model_name=EMBEDDING_MODEL_NAME,
+    )
+
+    vectordb = Chroma(
+        persist_directory=CHROMA_DIR,
+        embedding_function=embedding_model,
+    )
+
+    managed_sources = {
+        document.metadata["source"]
+        for document in documents
+    }
+
+    deleted_count = delete_stale_chunks(
+        vectordb,
+        managed_sources,
+        set(chunk_ids),
+    )
+    print(f"Deleted stale chunks: {deleted_count}")
 
     print("Writing chunks to Chroma...")
-    Chroma.from_documents(
+    vectordb.add_documents(
         documents=chunks,
-        embedding=embedding_model,
-        persist_directory=CHROMA_DIR,
+        ids=chunk_ids,
     )
 
     print("Done.")
+    print(f"Upserted chunks: {len(chunks)}")
     print(f"Chroma directory: {CHROMA_DIR}")
 
 
