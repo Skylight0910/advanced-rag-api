@@ -96,8 +96,9 @@ hyde_chain = hyde_prompt | llm | StrOutputParser()
 
 # ------------------ 工具函数 ------------------
 class TextDoc:
-    def __init__(self, page_content: str):
+    def __init__(self, page_content: str, metadata: dict | None = None):
         self.page_content = page_content
+        self.metadata = metadata or {}
 
 bm25_index = None
 bm25_docs = []
@@ -112,14 +113,16 @@ def tokenize_for_bm25(text: str) -> list[str]:
 def init_bm25_from_chroma():
     global bm25_index, bm25_docs
 
-    chroma_data = vectordb.get(include=["documents"])
-    texts = [
-        text
-        for text in chroma_data.get("documents", [])
+    chroma_data = vectordb.get(include=["documents", "metadatas"])
+    documents = chroma_data.get("documents", [])
+    metadatas = chroma_data.get("metadatas", [])
+
+    bm25_docs = [
+        TextDoc(text, metadata)
+        for text, metadata in zip(documents, metadatas)
         if text
     ]
-
-    bm25_docs = [TextDoc(text) for text in texts]
+    texts = [doc.page_content for doc in bm25_docs]
     tokenized_corpus = [
         tokenize_for_bm25(text)
         for text in texts
@@ -230,6 +233,21 @@ def build_context_from_texts(texts: list[str]) -> str:
 
 def preview_chunks(docs) -> list[str]:
     return [doc.page_content[:200] for doc in docs]
+
+
+def format_retrieved_docs(docs, scores=None) -> list[dict]:
+    scores = scores or [None] * len(docs)
+
+    return [
+        {
+            "source": doc.metadata.get("source"),
+            "file_name": doc.metadata.get("file_name"),
+            "chunk_id": doc.metadata.get("chunk_id"),
+            "content_preview": doc.page_content[:200],
+            "rerank_score": float(score) if score is not None else None,
+        }
+        for doc, score in zip(docs, scores)
+    ]
 
 
 def preview_texts(texts: list[str]) -> list[str]:
@@ -524,25 +542,25 @@ async def ask_hybrid_rerank(q: Question):
         "candidate_k": len(candidate_docs),
         "rerank_top_k": RERANK_TOP_K,
         "answer": answer,
-        "retrieved_chunks": preview_chunks(final_docs),
-        "rerank_scores": [
-            float(score)
-            for _, score in reranked_docs
-        ],
+        "retrieved_chunks": format_retrieved_docs(
+    	    final_docs,
+            [score for _, score in reranked_docs],
+        ),
     }
     
 @app.get("/")
 def root():
     return {
         "message": "Advanced RAG API is running.",
+        "version": "2.0.0",
         "endpoints": [
             "/ask",
             "/ask_multi_query",
             "/ask_hyde",
             "/ask_rerank",
             "/ask_milvus",
-            "/ask_milvus_rerank",   
-	    "/ask_hybrid",
-	    "/ask_hybrid_rerank",
+            "/ask_milvus_rerank",
+            "/ask_hybrid",
+            "/ask_hybrid_rerank",
         ],
     }
